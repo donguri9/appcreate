@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+		<title>Document</title>
+		
+		<style>	
+			
+			
+			#img{
+				position: absolute;
+				top:200px;
+				left:50px;
+			}
+			
+			
+			#test{
+				
+				position: relative;
+				top:100px;
+
+			}
+		</style>
+	
+		
+</head>
+<body>
+	
+	<img id = "img" src="bird.png" alt="bird">
+	
+	<div id="test">	<img id = "img" src="bird.png" alt="bird"></div>
+	;
+	<script>
+		
+		
+		var a = 90;
+		
+		var b = 100;
+		
+		var img = document.getElementById("img");
+		
+		img.addEventListener("click", function(){
+			
+			for (i = 0;i<30;i++){
+			 b += 10
+	         
+	      img.style.left = b + "px"  	
+			}
+		
+	})
+		
+
+var test = document.getElementById("test");
+
+	test.addEventListener("click", function(){
+		
+		
+	a += 10;
+	test.style.left = a + "px";	
+	
+		
+	})
+	
+		
+	</script>
+	
+	
+	
+</body>
+</html>
